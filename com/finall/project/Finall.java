@@ -97,7 +97,10 @@ public class Finall {
 				System.out.println("FILE NOT FOUND");
 		}
 	}
-
+	public static void Exit() {
+		System.out.println("SYSTEM GONNA CLOSE\nVISIT AGAIN THANK YOU..");
+	}
+	
 	// MAIN METHOD IS START//
 	public static void main(String[] args) {
 
@@ -123,7 +126,7 @@ public class Finall {
 
 				System.out.println("FOLLOWING ARE THE BUSSINESS OPERATION'S --->");
 				System.out.print("\nEnter : a For CREATE or ADD NEW FILE.)" + "\nEnter : b For DELETE the File."
-						+ "\nEnter : c For SEARCH the File." + "\nEnter : d To GO BACK.\n\n\t");
+						+ "\nEnter : c For SEARCH the File." + "\nEnter : d To EXIT.\n\n\t");
 				ch2 = console.next().charAt(0);
 
 				switch (ch2) {
@@ -140,7 +143,7 @@ public class Finall {
 					break;
 
 				case 'd':
-					System.exit(ch2);
+					Exit();
 					break;
 				}
 				break;
@@ -149,7 +152,7 @@ public class Finall {
 				System.exit(ch);
 
 			default:
-				System.out.println("SOMETHING GOES WRONG(EXCEPTION)....");
+				System.out.println("SOMETHING WAS WRONG");
 				break;
 			}
 		}
